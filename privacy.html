@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>プライバシーポリシー — KAWARITE</title>
+    <meta name="description" content="KAWARITEが取り扱う情報と、その使い方・保管・削除について定めたプライバシーポリシーです。" />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #17120f;
+        --panel: rgba(255, 255, 255, 0.04);
+        --border: rgba(255, 255, 255, 0.1);
+        --text: #efe9e4;
+        --muted: rgba(239, 233, 228, 0.66);
+        --accent: #e0563f;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0 16px;
+        background: var(--bg);
+        color: var(--text);
+        font-family: system-ui, "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
+        line-height: 1.9;
+      }
+      .wrap {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 64px 0 96px;
+      }
+      h1 {
+        font-size: 1.6rem;
+        margin: 0 0 0.3rem;
+      }
+      .updated {
+        color: var(--muted);
+        font-size: 0.85rem;
+        margin: 0 0 2rem;
+      }
+      h2 {
+        font-size: 1.05rem;
+        margin: 2.2rem 0 0.6rem;
+        padding-bottom: 0.35rem;
+        border-bottom: 1px solid var(--border);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+        margin: 0.6rem 0;
+      }
+      th,
+      td {
+        border: 1px solid var(--border);
+        padding: 8px 10px;
+        text-align: left;
+        vertical-align: top;
+      }
+      th {
+        background: var(--panel);
+        white-space: nowrap;
+      }
+      ul {
+        padding-left: 1.2rem;
+      }
+      li {
+        margin: 0.3rem 0;
+      }
+      a {
+        color: var(--accent);
+      }
+      .callout {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 14px 16px;
+        font-size: 0.9rem;
+      }
+      footer {
+        margin-top: 3rem;
+        padding-top: 1.2rem;
+        border-top: 1px solid var(--border);
+        font-size: 0.85rem;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>プライバシーポリシー</h1>
+      <p class="updated">KAWARITE ／ 最終更新日: 2026年9月22日</p>
+
+      <p>
+        KAWARITE（以下「本アプリ」）は、フリーランスのクリエイター向けのデスクトップアプリです。本ポリシーは、本アプリが
+        取り扱う情報と、その使い方・保管・削除について定めます。本アプリは現在クローズドベータであり、開発者が個人的に
+        知っている限られた利用者にのみ提供しています。
+      </p>
+
+      <h2>1. 取り扱う情報</h2>
+      <p>本アプリは、利用者が接続を許可したサービスから、次の情報を取得します。接続していないサービスの情報は取得しません。</p>
+      <table>
+        <thead>
+          <tr>
+            <th>サービス</th>
+            <th>取得する情報</th>
+            <th>目的</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Gmail</th>
+            <td>
+              利用者が <code>KAWARITE</code> ラベルを付けた相手からのメールの、差出人・件名・本文・日時。
+              利用者が承認した返信の送信。
+            </td>
+            <td>受信箱への表示、返信案の作成、案件との紐づけ</td>
+          </tr>
+          <tr>
+            <th>Discord</th>
+            <td>利用者のアカウントが参加しているチャンネル・DMのメッセージ</td>
+            <td>同上</td>
+          </tr>
+          <tr>
+            <th>freee</th>
+            <td>事業所・取引先の情報、本アプリから作成した請求書</td>
+            <td>請求書の作成</td>
+          </tr>
+          <tr>
+            <th>利用者が入力・取り込むもの</th>
+            <td>案件、打ち合わせの録音とその書き起こし、TODO、契約書のファイル</td>
+            <td>本アプリの各機能の提供</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        本アプリは、メールの既読・未読の状態を変更しません。また、利用者がラベルを付けていない相手のメールは取得しません。
+      </p>
+
+      <h2>2. Googleユーザーデータの取り扱い（Limited Use）</h2>
+      <div class="callout">
+        <p style="margin: 0">
+          本アプリがGoogle APIから受け取った情報の使用および転送は、
+          <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noreferrer"
+            >Google API Services User Data Policy</a
+          >（Limited Use requirements を含む）に準拠します。
+        </p>
+      </div>
+      <p>具体的には、Gmailから取得した情報について、次のことを行いません。</p>
+      <ul>
+        <li>広告の表示・配信のために使用すること</li>
+        <li>本アプリの機能提供以外の目的で使用すること</li>
+        <li>第三者へ販売・提供すること（下記「4. 第三者への提供」の場合を除く）</li>
+        <li>人が内容を読むこと（法令に基づく場合、利用者の明示的な許可を得た場合、セキュリティ上の調査や障害対応で必要な場合を除く）</li>
+      </ul>
+      <p>
+        本アプリが求めるGmailの権限は、<code>gmail.readonly</code>（読み取り）と <code>gmail.send</code>（送信）だけです。
+        メールの削除・ラベルの変更・設定の変更はできません。
+      </p>
+
+      <h2>3. 保管と安全対策</h2>
+      <ul>
+        <li>取得した情報は、Supabase（クラウドのデータベース）に保管します。通信はすべて暗号化されます（TLS）。</li>
+        <li>
+          各サービスへの接続の鍵（アクセストークン等）と、取り込んだ契約書の原本・その要約は、<strong>暗号化して保管します</strong>
+          （AES-256-GCM）。暗号鍵はアプリには含まれず、サーバー側で管理します。
+        </li>
+        <li>
+          データベースは、利用者ごとにアクセスを制限しています（行レベルセキュリティ）。ほかの利用者のデータは参照できません。
+        </li>
+        <li>
+          メッセージの本文・議事録の書き起こしは、現時点では暗号化せずに保管しています（検索のため）。上記のアクセス制限で保護しています。
+        </li>
+      </ul>
+
+      <h2>4. 第三者への提供</h2>
+      <p>本アプリは、取得した情報を販売しません。機能の提供に必要な範囲で、次のサービスにのみ送信します。</p>
+      <table>
+        <thead>
+          <tr>
+            <th>送信先</th>
+            <th>送るもの</th>
+            <th>目的</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Anthropic（Claude）</th>
+            <td>利用者が指示した処理に必要な範囲の文章（メッセージ、議事録、契約書の内容など）</td>
+            <td>返信案の作成、要約、質問への回答</td>
+          </tr>
+          <tr>
+            <th>OpenAI</th>
+            <td>打ち合わせの録音</td>
+            <td>文字起こし</td>
+          </tr>
+          <tr>
+            <th>freee</th>
+            <td>請求書の内容（取引先・件名・金額など）</td>
+            <td>請求書の作成</td>
+          </tr>
+          <tr>
+            <th>Supabase</th>
+            <td>上記「1. 取り扱う情報」のデータ</td>
+            <td>保管</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        これらの送信先では、送った内容が<strong>AIの学習に使われない条件</strong>で利用します。契約書については、取り込むときに
+        「AIで要約する」か「保管するだけ（AIに渡さない）」を利用者が毎回選べます。
+      </p>
+
+      <h2>5. 保存期間と削除</h2>
+      <ul>
+        <li>取得した情報は、利用者が削除するまで保管します。</li>
+        <li>AIとの会話（CHAT）は、最後の更新から1週間で自動的に削除されます（利用者が固定したものを除く）。</li>
+        <li>
+          各サービスの接続は、アプリの「接続設定」からいつでも解除できます。解除すると、その接続の鍵は削除されます。
+        </li>
+        <li>
+          保管している情報の削除を希望する場合は、下記の連絡先までご連絡ください。速やかに削除します。
+        </li>
+        <li>
+          Googleアカウント側からも、<a href="https://myaccount.google.com/permissions" target="_blank" rel="noreferrer"
+            >サードパーティ製アプリとの連携</a
+          >でいつでもアクセスを取り消せます。
+        </li>
+      </ul>
+
+      <h2>6. 未成年の利用</h2>
+      <p>本アプリは、業務で利用する成人を対象としており、13歳未満の方の利用を想定していません。</p>
+
+      <h2>7. 本ポリシーの変更</h2>
+      <p>内容を変更する場合は、このページを更新し、最終更新日を改めます。</p>
+
+      <h2>8. 連絡先</h2>
+      <p>KAWARITE 開発者<br />myria.dev000@gmail.com</p>
+
+      <footer>
+        <p><a href="./index.html">KAWARITE について</a></p>
+        <p>© 2026 KAWARITE</p>
+      </footer>
+    </div>
+  </body>
+</html>

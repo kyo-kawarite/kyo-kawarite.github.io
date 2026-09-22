@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KAWARITE — フリーランスのための業務マネージャー</title>
+    <meta
+      name="description"
+      content="KAWARITEは、フリーランスのクリエイター向けのデスクトップアプリです。案件・メッセージ・議事録・TODO・契約書・請求書を1か所にまとめ、AIマネージャーが探して答えます。"
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #17120f;
+        --panel: rgba(255, 255, 255, 0.04);
+        --border: rgba(255, 255, 255, 0.1);
+        --text: #efe9e4;
+        --muted: rgba(239, 233, 228, 0.66);
+        --accent: #e0563f;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0 16px;
+        background: radial-gradient(1200px 600px at 20% -10%, #3a2018 0%, var(--bg) 60%);
+        color: var(--text);
+        font-family: system-ui, "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
+        line-height: 1.8;
+      }
+      .wrap {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 72px 0 96px;
+      }
+      header p.lead {
+        color: var(--muted);
+        font-size: 1rem;
+        margin-top: 0.4rem;
+      }
+      h1 {
+        font-size: 2rem;
+        letter-spacing: 0.04em;
+        margin: 0;
+      }
+      h2 {
+        font-size: 1.05rem;
+        margin: 2.5rem 0 0.8rem;
+        padding-bottom: 0.4rem;
+        border-bottom: 1px solid var(--border);
+      }
+      ul {
+        padding-left: 1.2rem;
+      }
+      li {
+        margin: 0.35rem 0;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 12px;
+        margin-top: 1rem;
+      }
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 16px 18px;
+      }
+      .card h3 {
+        margin: 0 0 0.3rem;
+        font-size: 0.95rem;
+        color: var(--accent);
+      }
+      .card p {
+        margin: 0;
+        font-size: 0.875rem;
+        color: var(--muted);
+      }
+      footer {
+        margin-top: 3.5rem;
+        padding-top: 1.2rem;
+        border-top: 1px solid var(--border);
+        font-size: 0.85rem;
+        color: var(--muted);
+      }
+      a {
+        color: var(--accent);
+      }
+      .note {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 14px 16px;
+        font-size: 0.875rem;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>KAWARITE</h1>
+        <p class="lead">フリーランスのクリエイターのための、業務マネージャー（Windowsデスクトップアプリ）</p>
+      </header>
+
+      <p>
+        案件・メッセージ・打ち合わせ・TODO・契約書・請求書を1か所にまとめ、AIマネージャーが必要なことを探して答えます。
+        現在はクローズドベータで、限られた利用者にのみ提供しています。
+      </p>
+
+      <h2>できること</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>CONTACT</h3>
+          <p>Discord・Gmailのやり取りを1つの受信箱にまとめ、返信案を作ります。</p>
+        </div>
+        <div class="card">
+          <h3>MEETING</h3>
+          <p>打ち合わせの録音から、要約と全文の書き起こし、TODOを作ります。</p>
+        </div>
+        <div class="card">
+          <h3>INVOICE / CONTRACT</h3>
+          <p>契約書の要点を読み取り、請求書の下書きを作って freee に登録します。</p>
+        </div>
+        <div class="card">
+          <h3>CHAT</h3>
+          <p>「あの案件の契約書、再委託はOKだった?」に、保存されている情報から答えます。</p>
+        </div>
+      </div>
+
+      <h2>Gmailとの連携について</h2>
+      <p>
+        利用者が許可した場合にかぎり、KAWARITEはGmailの読み取りと返信の送信を行います。取得するのは、利用者が
+        <code>KAWARITE</code> ラベルを付けた相手からのメールだけです。メールの既読・未読の状態は変更しません。
+      </p>
+      <div class="note">
+        取り扱う情報の詳細は、<a href="./privacy.html">プライバシーポリシー</a>をご覧ください。
+      </div>
+
+      <h2>お問い合わせ</h2>
+      <p>myria.dev000@gmail.com</p>
+
+      <footer>
+        <p>
+          <a href="./privacy.html">プライバシーポリシー</a>
+        </p>
+        <p>© 2026 KAWARITE</p>
+      </footer>
+    </div>
+  </body>
+</html>
